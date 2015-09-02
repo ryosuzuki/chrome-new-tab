@@ -1,8 +1,4 @@
 {
-   "background": {
-      "persistent": false,
-      "scripts": [ "src/js/onInstall.js" ]
-   },
    "chrome_url_overrides": {
       "newtab": "src/index.html"
    },
