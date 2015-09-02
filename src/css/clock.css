@@ -1,0 +1,233 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url(font/OpenSans-Light.woff) format("woff")
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: url(font/OpenSans-Semibold.woff) format("woff")
+}
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-user-select: none
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #fcfcfc;
+  color: #555;
+  transition: color 0.2s linear, background 0.2s linear
+}
+#container {
+  position: absolute;
+  top: 33%;
+  left: 0;
+  width: 100%
+}
+label {
+  cursor: pointer
+}
+h1,
+h2 {
+  font-weight: 300;
+  text-align: center;
+  margin: 0
+}
+h1 {
+  font-size: 6em;
+  line-height: 1.2
+}
+h1 span {
+  color: #999;
+  text-transform: uppercase;
+  font-size: .25em;
+  vertical-align: top;
+  position: relative;
+  top: 1em;
+  right: 0;
+  margin: 0 .3em 0 -.5em
+}
+h1 small {
+  margin-left: .1em;
+  margin-right: -.5em;
+  font-size: .5em;
+  color: #999
+}
+h2 {
+  font-size: 1.3em;
+  color: #999;
+  width: 50%;
+  margin: 0 auto;
+  transition: color 0.2s linear
+}
+button {
+  background: transparent;
+  padding: .4em .5em;
+  outline: none;
+  box-shadow: 0 0 1px RGBA(0, 0, 0, 0);
+  border: none;
+  cursor: pointer
+}
+button svg {
+  fill: #ccc;
+  transition: fill 0.1s linear
+}
+button:hover svg {
+  fill: #999
+}
+button.active svg {
+  fill: #333
+}
+#settings {
+  position: fixed;
+  top: 10px;
+  right: 10px
+}
+#settings>button {
+  float: right
+}
+#open-settings {
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.2, 0.4, 0.5, 1);
+  -webkit-transform: rotate(0deg) translateZ(0)
+}
+#open-settings.active {
+  -webkit-transform: rotate(180deg) translateZ(0)
+}
+#open-settings.active ~ #settings-dropdown label {
+  -webkit-transform: translateX(0)
+}
+#settings-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 150px;
+  text-align: right;
+  list-style: none;
+  padding: 0;
+  margin: 0
+}
+#settings-dropdown li {
+  position: relative;
+  overflow: hidden
+}
+#settings-dropdown input {
+  position: absolute;
+  right: 120%;
+  top: 0
+}
+#settings-dropdown input:checked+label {
+  color: #000;
+  font-weight: bold
+}
+#settings-dropdown label {
+  padding: .4em 1em;
+  display: block;
+  color: #999;
+  -webkit-transition: color 0.1s linear, -webkit-transform 0.3s cubic-bezier(0, 0.4, 0.45, 1);
+  -webkit-transform: translateX(100%)
+}
+#settings-dropdown label:hover {
+  color: #000
+}
+#settings-dropdown li:nth-child(2) label {
+  -webkit-transition-delay: 0.04s
+}
+#settings-dropdown li:nth-child(3) label {
+  -webkit-transition-delay: 0.08s
+}
+.analogue-clock {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  display: block;
+  background: url(./img/clock-face.svg) no-repeat;
+  background-size: cover;
+  margin: -3em auto 1.5em
+}
+#hour-hand,
+#minute-hand,
+#second-hand {
+  -webkit-transform-origin: 50% 50%;
+  position: absolute
+}
+#hour-hand:before,
+#minute-hand:before,
+#second-hand:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 50%;
+  left: 0;
+  margin-bottom: .8em
+}
+#hour-hand {
+  z-index: 1;
+  height: 125px;
+  top: 62.5px;
+  width: 7px;
+  left: 121.5px
+}
+#hour-hand:before {
+  background: #555
+}
+#minute-hand {
+  z-index: 2;
+  height: 175px;
+  top: 37.5px;
+  width: 3px;
+  left: 123.5px
+}
+#minute-hand:before {
+  background: #555
+}
+#second-hand {
+  z-index: 3;
+  height: 200px;
+  top: 25px;
+  width: 1px;
+  left: 124.5px;
+  -webkit-transition: -webkit-transform 0.06s cubic-bezier(0.6, 1.7, 0.6, 1.3)
+}
+#second-hand:before {
+  background: red;
+  -webkit-transform: translateZ(0)
+}
+.lights-off {
+  background: #212224;
+  color: #fff
+}
+.lights-off h2 {
+  color: #ccc
+}
+.lights-off button svg {
+  fill: #777;
+  transition: fill 0.1s linear
+}
+.lights-off button:hover svg {
+  fill: #bbb
+}
+.lights-off button.active svg {
+  fill: #fff
+}
+.lights-off #settings-dropdown input:checked+label {
+  color: #fff;
+  font-weight: bold
+}
+.lights-off #settings-dropdown label:hover {
+  color: #bbb
+}
+.lights-off #hour-hand:before,
+.lights-off #minute-hand:before {
+  background: #fff
+}
+/*# sourceMappingURL=style.css.map */
+
