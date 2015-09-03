@@ -39,7 +39,6 @@
 }
 
 body {
-  background-color: #fff;
   font-family: 'Roboto', Arial, sans-serif;
   font-weight: 400;
   font-size: 13px;
@@ -105,7 +104,7 @@ body {
   text-align: center;
   display: table-cell;
   vertical-align: middle;
-  color: #999;
+  color: #fff;
 }
 
 #box-right {
