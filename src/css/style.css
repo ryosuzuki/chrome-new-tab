@@ -2,40 +2,35 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 100;
-  src: url('../font/Roboto-Thin.woff') format('woff');
-  src: url('../font/Roboto-Thin.ttf') format('truetype');
+  src: url('/src/font/Roboto-Thin.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 300;
-  src: url('../font/Roboto-Light.woff') format('woff');
-  src: url('../font/Roboto-Light.ttf') format('truetype');
+  src: url('/src/font/Roboto-Light.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  src: url('../font/Roboto-Regular.woff') format('woff');
-  src: url('../font/Roboto-Regular.ttf') format('truetype');
+  src: url('/src/font/Roboto-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
-  src: url('../font/Roboto-Medium.woff') format('woff');
-  src: url('../font/Roboto-Medium.ttf') format('truetype');
+  src: url('/srd/font/Roboto-Medium.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  src: url('../font/Roboto-Bold.woff') format('woff');
-  src: url('../font/Roboto-Bold.ttf') format('truetype');
+  src: url('/src/font/Roboto-Bold.ttf') format('truetype');
 }
 
 body {

@@ -2,7 +2,6 @@
    "chrome_url_overrides": {
       "newtab": "src/index.html"
    },
-   "default_locale": "en",
    "description": "Google Chrome New Tab",
    "homepage_url": "http://ryosuzuki.org",
    "icons": {
@@ -13,7 +12,6 @@
    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAm307ykM1zFLqwSkAJz2OwzpkMs1eyumCTxky07r7y9ArlkL2uRcSIjZHEVZPPpR11bxDxpOan9cGZSGOx8LVozGmircldRcKMzHzWrfLUotQ1ArSKLMqBwBDFEu1OLxLJNxlWE1IF5ykdhZv/wor6qNracDNLmPC1cXEQc1QpmVyUSLm6iFwzKaSUGjQ6wfmsLShUcHdpMg8l9sI4qd2xFcT2Z5u62LaY0EHpH2N1n8fDzVgYaYUpvJsrn9JOcCFWpJ/vfQzKpetM8Vq55vq4r8euBUppFRLr7lPej8MzYausjj3PfjmicM31z5GJsEndjzXDPwZuo+MQ/AmS4aueQIDAQAB",
    "manifest_version": 2,
    "name": "Google Chrome New Tab",
-   "options_page": "src/options.html",
    "permissions": [ "storage", "topSites" ],
    "update_url": "https://clients2.google.com/service/update2/crx",
    "version": "1.0.1"

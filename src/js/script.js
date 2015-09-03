@@ -3,7 +3,7 @@ var limit = 0690;
 var random = Math.floor(Math.random() * limit);
 var fileName = formatNumber(random, 4);
 var imgURL = chrome.extension.getURL("src/img/" + fileName + ".jpg");
-$('#background').css("background-image", "url('" + imgURL + "')").animate({ opacity: 1 }, { duration: 2000 });
+$('#background').css("background-image", "url('" + imgURL + "')").animate({ opacity: 1 }, { duration: 1800 });
 
 updateTime();
 setInterval(updateTime, 1000);
