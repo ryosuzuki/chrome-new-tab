@@ -7,10 +7,7 @@ files.each do |file|
   if not File.exist?("./1280x720/#{file_name}")
     puts 'processing...'
     image = MiniMagick::Image.open(file)
-    image.combine_options do |c|
-      c.gravity 'center'
-      c.crop "1280x720+0+0"
-    end
+    image.resize "1280x720"
     image.write "./1280x720/#{file_name}"
   else
     puts 'skip'
