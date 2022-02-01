@@ -2,16 +2,16 @@
    "chrome_url_overrides": {
       "newtab": "src/index.html"
    },
-   "description": "Google Chrome New Tab",
+   "description": "Chrome New Tab",
    "homepage_url": "http://ryosuzuki.org",
    "icons": {
       "128": "icons/icon128.png",
       "16": "icons/icon16.png",
       "48": "icons/icon48.png"
    },
-   "manifest_version": 3,
-   "name": "Google Chrome New Tab",
+   "manifest_version": 2,
+   "name": "Chrome New Tab",
    "permissions": [],
    "update_url": "https://clients2.google.com/service/update2/crx",
-   "version": "1.0.5"
+   "version": "1.0.6"
 }
